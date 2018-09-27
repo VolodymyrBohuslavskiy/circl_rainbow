@@ -1,0 +1,58 @@
+@keyframes rotate {
+    to {
+        transform: rotate(360deg)}}
+
+.logo {
+    margin-top: 80px;
+    margin-left: 30%;
+
+    display: block;
+    position: relative;
+    width: 224px;
+    height: 224px;
+    background-image: url("nice_cat.jpeg");
+    border-radius: 50%;
+    box-shadow: 0 1px 10px 9px rgba(100, 100, 100, .5)
+}
+
+.logo:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 224px;
+    height: 224px;
+
+    border-radius: 50%;
+    transition: all .5s
+}
+
+
+.logo:hover:after {
+    box-shadow: -14.56px -14.56px 0 0 rgba(255, 0, 0, .3),
+                -20.384px 0 0 0 rgba(255, 170, 0, .3),
+                -14.56px 14.56px 0 0 rgba(170, 255, 0, .3),
+                0 20.384px 0 0 rgba(0, 255, 0, .3),
+                14.56px 14.56px 0 0 rgba(0, 255, 170, .3),
+                20.384px 0 0 0 rgba(0, 170, 255, .3),
+                14.56px -14.56px 0 0 rgba(0, 0, 255, .3),
+                0 -20.384px 0 0 rgba(170, 0, 255, .3);
+    animation: rotate 2s linear infinite
+}
+
+.polite {
+    margin-top: -140px;
+    margin-left: 50%;
+
+}
+
+.polite:hover {
+    margin-top: -140px;
+    margin-left: 60%;
+    transform: scale(1.5)
+
+}
+
+body {
+
+    background: darkgray;
+}
